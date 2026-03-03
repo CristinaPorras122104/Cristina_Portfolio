@@ -38,7 +38,7 @@ export default function App() {
     setStatus("Sending...");
 
     try {
-      const res = await fetch("https://cristina-portfolio-s24y.onrender.com/api/contact", {
+      const res = await fetch("https://cristina-portfolio-s24y.onrender.com/api/contact",  {
   method: "POST",
   headers: { "Content-Type": "application/json" },
   body: JSON.stringify(form),
