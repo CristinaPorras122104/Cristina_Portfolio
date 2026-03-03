@@ -6,7 +6,10 @@ import dotenv from "dotenv";
 dotenv.config();
 
 const app = express();
-app.use(cors());
+app.use(cors({
+  origin: "https://cristinaporras122104.github.io",
+  methods: ["GET", "POST"],
+}));
 app.use(express.json());
 
 app.get("/", (req, res) => res.send("Backend running ✅"));
