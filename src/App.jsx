@@ -275,7 +275,6 @@ export default function App() {
               Send Message
             </button>
 
-            <p className="note">{status || "*This will send to your Gmail (backend must be running)."}</p>
           </form>
         </div>
       </section>
