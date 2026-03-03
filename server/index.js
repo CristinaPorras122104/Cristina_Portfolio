@@ -7,20 +7,15 @@ dotenv.config();
 
 const app = express();
 
-// ✅ CORS: allow your GitHub Pages site + local dev
 app.use(
   cors({
     origin: [
       "https://cristinaporras122104.github.io",
-      "http://localhost:5173",
-      "http://127.0.0.1:5173",
+      "http://localhost:5173"
     ],
-    methods: ["GET", "POST", "OPTIONS"],
+    methods: ["GET", "POST"],
   })
 );
-
-// ✅ handle preflight requests
-app.options("*", cors());
 
 app.use(express.json());
 
@@ -50,12 +45,10 @@ app.post("/api/contact", async (req, res) => {
       text: `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`,
     });
 
-    return res.json({ ok: true, message: "Sent ✅" });
+    res.json({ ok: true });
   } catch (err) {
-    console.log("CONTACT ERROR:", err); // ✅ see real error in Render logs
-    return res
-      .status(500)
-      .json({ ok: false, error: err?.message || "Failed to send" });
+    console.log(err);
+    res.status(500).json({ ok: false, error: err.message });
   }
 });
 
