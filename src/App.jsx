@@ -1,4 +1,5 @@
 import { useState } from "react";
+import gradpic from "./assets/gradpic.png";
 
 export default function App() {
   const year = new Date().getFullYear();
@@ -94,22 +95,24 @@ export default function App() {
         </div>
 
         <div className="hero-right">
-          <div className="card glow">
-            <p className="card-title">What I do</p>
-            <ul className="checklist">
-              <li>Responsive web pages</li>
-              <li>Simple web apps (CRUD)</li>
-              <li>Modern UI + clean layout</li>
-              <li>Deploy projects online</li>
-            </ul>
-            <div className="mini">
-              <div className="mini-box">
-                <p className="mini-top">Currently learning</p>
-                <p className="mini-main">MERN Stack</p>
-              </div>
-              <div className="mini-box">
-                <p className="mini-top">Goal</p>
-                <p className="mini-main">Internship-ready</p>
+  <img src={gradpic} alt="Cristina Porras" className="profile-img" />
+
+  <div className="card glow">
+    <p className="card-title">What I do</p>
+    <ul className="checklist">
+      <li>Responsive web pages</li>
+      <li>Simple web apps (CRUD)</li>
+      <li>Modern UI + clean layout</li>
+      <li>Deploy projects online</li>
+    </ul>
+    <div className="mini">
+      <div className="mini-box">
+        <p className="mini-top">Currently learning</p>
+        <p className="mini-main">MERN Stack</p>
+      </div>
+      <div className="mini-box">
+        <p className="mini-top">Goal</p>
+        <p className="mini-main">Internship-ready</p>
               </div>
             </div>
           </div>
@@ -266,4 +269,4 @@ export default function App() {
       </footer>
     </div>
   );
-}
+} 
