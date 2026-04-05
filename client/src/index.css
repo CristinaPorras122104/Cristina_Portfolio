@@ -1,0 +1,177 @@
+html, body, #root {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  background: #020f38;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  width: 100%;
+  padding: 18px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111827;
+  box-sizing: border-box;
+}
+
+.logo {
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 24px;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 90px 10%;
+  box-sizing: border-box;
+}
+
+.hero-text {
+  max-width: 700px;
+}
+
+.tag {
+  color: #38bdf8;
+  margin-bottom: 10px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.hero h2 {
+  margin-top: 12px;
+  font-size: 1.3rem;
+  color: #cbd5e1;
+}
+
+.hero p {
+  margin-top: 18px;
+  line-height: 1.8;
+  color: #cbd5e1;
+}
+
+.hero-buttons {
+  margin-top: 24px;
+  display: flex;
+  gap: 14px;
+}
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.hero-image img {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid rgba(124, 58, 237, 0.6);
+  box-shadow: 0 10px 40px rgba(124, 58, 237, 0.4);
+}
+.btn {
+  display: inline-block;
+  padding: 12px 22px;
+  border-radius: 999px;
+  background: #7c3aed;
+  color: white;
+  text-decoration: none;
+}
+.section {
+  padding: 80px 10%;
+}
+
+.section h2 {
+  margin-bottom: 16px;
+}
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 16px;
+}
+
+.skill-card {
+  background: #1e293b;
+  padding: 16px;
+  border-radius: 12px;
+  text-align: center;
+}
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.project-card {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.project-card h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  line-height: 1.7;
+  color: #cbd5e1;
+}
+
+.project-link {
+  display: inline-block;
+  margin-top: 14px;
+  color: #38bdf8;
+  text-decoration: none;
+  font-weight: bold;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  max-width: 600px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 14px;
+  border-radius: 10px;
+  border: none;
+}
+.socials {
+  margin-top: 18px;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.socials a {
+  color: #38bdf8;
+  text-decoration: none;
+  font-weight: 500;
+}
+.footer {
+  text-align: center;
+  padding: 30px;
+}
